@@ -1,6 +1,6 @@
 import { GET_PRODUCTS } from "../action-types/products-page-action-types";
 
-const initialState = [];
+const initialState = [{}];
 
 const products = (state = initialState, action) => {
 	switch (action.type) {
