@@ -4,7 +4,7 @@ export default function LandingPage() {
 	return (
 		<div id="main-landing">
 			<div id="main-landing-section">
-				<button class="search-button">Explore</button>
+				<button className="search-button">Explore</button>
 			</div>
 		</div>
 	);
