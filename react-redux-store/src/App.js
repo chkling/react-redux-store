@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import ProductsPage from "./components/ProductsPage";
-import SingleProductPage from "./components/SingleProductPage";
+import DisplaySingleProduct from "./components/DisplaySingleProduct";
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -28,8 +28,8 @@ function App() {
 					<Route path="/Store">
 						<ProductsPage />
 					</Route>
-					<Route path="/Item">
-						<SingleProductPage />
+					<Route path="/Item/:id">
+						<DisplaySingleProduct />
 					</Route>
 					<Route path="/Checkout">
 						<Cart />

@@ -1,8 +1,8 @@
-import { GET_SINGLE_PRODUCT } from "../action-types/products-page-action-types";
+import { GET_SINGLE_PRODUCT } from "../action-types/single-products-action-types";
 
 const initialState = {};
 
-const products = (state = initialState, action) => {
+const singleProduct = (state = initialState, action) => {
 	switch (action.type) {
 		case GET_SINGLE_PRODUCT:
 			return (state = action.payload);
@@ -11,4 +11,4 @@ const products = (state = initialState, action) => {
 	}
 };
 
-export default products;
+export default singleProduct;

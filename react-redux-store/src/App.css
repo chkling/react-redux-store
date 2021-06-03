@@ -1,6 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 .App {
 	text-align: center;
-	margin: 5px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
@@ -11,12 +17,23 @@ button {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: #92a8d1;
+	padding: 10px;
+	border-bottom: 1px #f4f4f4 solid;
+}
+
+.main-title {
+	font-size: 30px;
+	margin: 10px;
+	padding: 10px;
 }
 
 #navbar nav {
 	display: flex;
 	flex-direction: column;
-	width: 100px;
+	width: 110px;
+	margin: 5px;
+	padding: 5px;
 }
 
 #navbar nav a {
@@ -28,15 +45,16 @@ button {
 
 #navbar nav a:hover {
 	cursor: pointer;
-	border-bottom: 1px black solid;
+	border-bottom: 1px #f4f4f4 solid;
+	color: #f4f4f4;
 }
 
 #main-landing {
-	height: 50vh;
+	height: 62vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 15px;
+	background-color: #034f84;
 }
 
 #main-landing-section {
@@ -46,6 +64,7 @@ button {
 	flex-direction: column-reverse;
 	align-items: center;
 	background-image: url("./images/mall.jpg");
+	margin-top: 80px;
 }
 
 .search-button {
@@ -53,4 +72,70 @@ button {
 	height: 30px;
 	margin: 10px;
 	padding: 5px;
+	background-color: #92a8d1;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 15px;
+	color: black;
+	border: 1px black solid;
+}
+
+.search-button:hover {
+	color: #f4f4f4;
+	border: 1px #f4f4f4 solid;
+}
+
+/* ABOUT MAIN */
+#about-main {
+	background-color: #034f84;
+	color: #f4f4f4;
+	padding: 20px;
+	height: 30rem;
+}
+#about-main h1,
+p {
+	padding: 5px;
+	margin: 10px;
+}
+
+/* PRODUCTS PAGE */
+
+#main-products-section {
+	background-color: #034f84;
+	padding: 10px;
+}
+
+.products-main-header {
+	color: white;
+	padding: 10px;
+}
+
+/* PRODUCTS CARDS */
+
+.product-card {
+	background-color: #f4f4f4;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 7px;
+}
+
+.product-card p,
+img,
+button {
+	padding: 5px;
+	margin: 5px;
+}
+
+/* CART */
+#cart-container {
+	background-color: #034f84;
+	color: #f4f4f4;
+	padding: 20px;
+	min-height: 30rem;
+}
+
+.footer {
+	background-color: #92a8d1;
+	height: 40px;
+	border-top: 1px #f4f4f4 solid;
 }

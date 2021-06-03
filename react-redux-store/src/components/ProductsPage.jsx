@@ -12,11 +12,10 @@ export default function ProductsPage() {
 	}, []);
 
 	return (
-		<div>
-			<h1>Main Products Page</h1>
+		<div id="main-products-section">
 			<div>
 				{products.map((product) => (
-					<SingleProductPage product={product} />
+					<SingleProductPage key={product.title} product={product} />
 				))}
 			</div>
 		</div>
